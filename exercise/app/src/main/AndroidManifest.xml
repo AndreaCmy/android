@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mengyingc.exercise">
+
+    <!-- 添加操作闪光灯的权限 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <!-- 添加操作振动器的权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AutocompleteActivity" />
+        <activity android:name=".ChronometerActivity" />
+        <activity android:name=".SpinnerActivity" />
+        <activity android:name=".ProgressBarActivity" />
+        <activity
+            android:name=".tabhost.TabActivity"
+            android:label="@string/title_activity_tab"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".imageswitcher.ImageSwitcherActivity" />
+        <activity android:name=".imageswitcher.GralleryActivity" />
+        <activity android:name=".alertdialog.AlertDialogActivity" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".alertdialog.DatePickerActivity" />
+        <activity android:name=".alertdialog.ToastActivity" />
+        <activity android:name=".alertdialog.NotificationActivity" />
+        <activity android:name=".alertdialog.NotifyActivity" />
+        <activity android:name=".menu.MenuActivity"></activity>
+    </application>
+
+</manifest>
